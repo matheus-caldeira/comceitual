@@ -43,11 +43,11 @@ const SignIn: React.FC = () => {
 
         signIn({ ...data });
 
-        history.push('/home');
+        history.push('/ongs');
 
         addToast({
-          type: 'success',
-          title: 'Login realizado',
+          type: 'info',
+          title: 'Método não implementado',
         });
       } catch (err) {
         if (err instanceof Yup.ValidationError) {
