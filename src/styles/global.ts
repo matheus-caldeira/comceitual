@@ -20,28 +20,28 @@ export default createGlobalStyle`
   }
 
   h1 {
-    /* font-size: 37pt; */
+    font-size: 1.5rem;
     font-weight: 700;
     color: ${props => props.theme.colors.a.color}
   }
 
   h2 {
-    /* font-size: 27pt; */
+    font-size: 1.4rem;
     font-weight: 300;
   }
 
   h3, button, a, input, select {
-    /* font-size: 19pt; */
+    font-size: 1rem;
     font-weight: 500;
   }
 
   h4 {
-    /* font-size: 19pt; */
+    font-size: 1rem;
     font-weight: 300;
   }
 
   h5, p, span {
-    /* font-size: 16pt; */
+    font-size: 0.9rem;
     font-weight: 300;
   }
 

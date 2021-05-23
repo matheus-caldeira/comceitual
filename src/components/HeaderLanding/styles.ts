@@ -36,15 +36,15 @@ export const Nav = styled.nav`
   }
 
   @media (max-width: 768px) {
-    padding: 15px 40px;
+    padding: 50px 40px 15px;
   }
 
   @media (max-width: 750px) {
-    padding: 15px 20px;
+    padding: 50px 0 15px;
   }
 
   @media (max-width: 582px) {
-    padding: 15px 20px;
+    padding: 50px 0 15px;
 
     .links {
       display: none;
@@ -128,6 +128,8 @@ export const GoBack = styled.button<IGoBack>`
   display: ${props => (props.show ? 'flex' : 'none')};
 
   @media (max-width: 768px) {
-    top: 60px;
+    &.custom {
+      top: 10px;
+    }
   }
 `;

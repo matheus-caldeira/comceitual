@@ -3,35 +3,11 @@ import { FiSearch } from 'react-icons/fi';
 
 import Header from '../../components/HeaderLanding';
 
+import { ongs } from '../../utils/datas';
+
 import { Container, Input, Ong, Ongs as Content, Search } from './styles';
 
 const Ongs: React.FC = () => {
-  const ongs = [
-    {
-      id: 0,
-      name: 'Sol',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
-      types: ['Infantil', 'violencia', 'Drogas'],
-      image:
-        'https://images.unsplash.com/photo-1615150338956-542fc878f7e4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=745&q=80',
-    },
-    {
-      id: 1,
-      name: 'Lua',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
-      types: ['Infantil', 'violencia', 'Drogas'],
-      image:
-        'https://images.unsplash.com/photo-1615150338956-542fc878f7e4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=745&q=80',
-    },
-    {
-      id: 2,
-      name: 'Casa',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
-      types: ['Infantil', 'violencia', 'Drogas'],
-      image:
-        'https://images.unsplash.com/photo-1615150338956-542fc878f7e4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=745&q=80',
-    },
-  ];
   return (
     <Container>
       <Header back />

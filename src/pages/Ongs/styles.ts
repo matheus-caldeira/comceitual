@@ -68,7 +68,6 @@ export const Ongs = styled.div`
 export const Ong = styled(Link)`
   width: 300px;
   position: relative;
-  background-color: ${props => props.theme.colors.background.primary};
   border: 2px solid ${props => props.theme.colors.border};
   border-radius: 8px;
   overflow: hidden;

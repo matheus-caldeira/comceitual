@@ -1,19 +1,18 @@
 import React, { useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 import Header from '../../components/HeaderLanding';
 import Photos from '../../components/Photos';
-import Performance from '../../components/Performance';
 
-import { ongs, photos, projects } from '../../utils/datas';
+import { projects, photos } from '../../utils/datas';
 
-import { Container, Content, Nav, Project } from './styles';
+import { Container, Content, Nav } from './styles';
 
 interface IRouteProps {
   id: string;
 }
 
-const Ong: React.FC = () => {
+const Project: React.FC = () => {
   const { id } = useParams<IRouteProps>();
   const [subPage, setSubPage] = useState(0);
 
@@ -21,8 +20,8 @@ const Ong: React.FC = () => {
     <Container>
       <Header
         custom
-        name={ongs[parseFloat(id)].name}
-        description={ongs[parseFloat(id)].description}
+        name={projects[parseFloat(id)].name}
+        description={projects[parseFloat(id)].description}
       />
       <Nav>
         <button
@@ -49,23 +48,16 @@ const Ong: React.FC = () => {
       </Nav>
 
       <Content>
-        {subPage === 0 &&
-          projects.map(project => (
-            <Project key={project.id}>
-              <img src={project.image} alt={project.name} />
-              <div className="name">
-                <h1>{project.name}</h1>
-                <Link to={`/projects/${project.id}`}>Ver projeto</Link>
-                <button type="button">Acompanhar</button>
-              </div>
-              <p>{project.description}</p>
-            </Project>
-          ))}
-        {subPage === 1 && <Performance />}
+        {subPage === 0 && <div>relatorios</div>}
+        {subPage === 1 && (
+          <div>
+            <p>Desempenho</p>
+          </div>
+        )}
         {subPage === 2 && <Photos photos={photos} />}
       </Content>
     </Container>
   );
 };
 
-export default Ong;
+export default Project;

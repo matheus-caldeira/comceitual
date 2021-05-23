@@ -35,7 +35,7 @@ const HeaderLanding: React.FC<IProps> = ({
               Acompanhar
             </Link>
           </Section>
-          <GoBack type="button" onClick={goBack} show>
+          <GoBack className="custom" type="button" onClick={goBack} show>
             <FiArrowLeft size={25} />
             Voltar
           </GoBack>
