@@ -21,6 +21,10 @@ export const Search = styled.form`
   padding: 0 10%;
 
   margin-top: 60px;
+
+  @media (max-width: 450px) {
+    flex-direction: column;
+  }
 `;
 
 export const Input = styled.div`
@@ -42,6 +46,14 @@ export const Input = styled.div`
 
   & + div {
     margin-left: 40px;
+
+    @media (max-width: 450px) {
+      margin: 15px 0;
+    }
+  }
+
+  @media (max-width: 450px) {
+    width: 100%;
   }
 `;
 
@@ -61,6 +73,7 @@ export const Ong = styled(Link)`
   border-radius: 8px;
   overflow: hidden;
   color: ${props => props.theme.colors.primary};
+  margin: 1rem;
 
   .img-container {
     width: 100%;
@@ -70,7 +83,7 @@ export const Ong = styled(Link)`
     img {
       width: 100%;
       max-height: 200px;
-      object-fit: contain;
+      object-fit: cover;
     }
 
     .types {
@@ -93,5 +106,9 @@ export const Ong = styled(Link)`
 
   .info {
     padding: 10px;
+  }
+
+  @media (max-width: 830px) {
+    width: 100%;
   }
 `;

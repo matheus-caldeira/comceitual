@@ -36,15 +36,15 @@ export const Nav = styled.nav`
   }
 
   @media (max-width: 768px) {
-    padding: 0 40px;
+    padding: 15px 40px;
   }
 
   @media (max-width: 750px) {
-    padding: 0 20px;
+    padding: 15px 20px;
   }
 
-  @media (max-width: 535px) {
-    padding: 0 20px;
+  @media (max-width: 582px) {
+    padding: 15px 20px;
 
     .links {
       display: none;

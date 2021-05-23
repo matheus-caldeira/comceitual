@@ -70,7 +70,9 @@ const Ong: React.FC = () => {
         </button>
       </Nav>
 
-      <Content />
+      <Content>
+        <p>test</p>
+      </Content>
     </Container>
   );
 };
