@@ -3,13 +3,12 @@ import { FiLogIn, FiMail, FiLock } from 'react-icons/fi';
 import { Form } from '@unform/web';
 import { FormHandles } from '@unform/core';
 import * as Yup from 'yup';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import Input from '../../components/Input';
 import Button from '../../components/Button';
 import getValidationErrors from '../../utils/getValidationErrors';
 
-import { useAuth } from '../../hooks/auth';
 import { useToast } from '../../hooks/toast';
 
 import ISignIn from '../../DTOS/Forms/ISignIn';
@@ -21,9 +20,7 @@ import { Container, Content, AnimationContainer, Background } from './styles';
 const SignIn: React.FC = () => {
   const formRef = useRef<FormHandles>(null);
 
-  const { signIn } = useAuth();
   const { addToast } = useToast();
-  const history = useHistory();
 
   const handleSubmit = useCallback(
     async (data: ISignIn) => {
@@ -40,10 +37,6 @@ const SignIn: React.FC = () => {
         await schema.validate(data, {
           abortEarly: false,
         });
-
-        signIn({ ...data });
-
-        history.push('/ongs');
 
         addToast({
           type: 'info',
@@ -63,7 +56,7 @@ const SignIn: React.FC = () => {
           });
       }
     },
-    [addToast, history, signIn],
+    [addToast],
   );
 
   return (
