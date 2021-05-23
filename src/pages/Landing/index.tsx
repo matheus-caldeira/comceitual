@@ -7,6 +7,42 @@ const Landing: React.FC = () => {
     <div>
       <Header />
       <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
+      <p>Pagine inicial</p>
     </div>
   );
 };

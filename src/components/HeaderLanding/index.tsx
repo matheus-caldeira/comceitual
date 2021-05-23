@@ -1,18 +1,19 @@
-import React, { useCallback } from 'react';
-import { FiSun, FiMoon } from 'react-icons/fi';
+import React, { useCallback, useState } from 'react';
+import { FiSun, FiMoon, FiMenu } from 'react-icons/fi';
 import { VscGithubAlt } from 'react-icons/vsc';
-import { lighten } from 'polished';
-import Switch from 'react-switch';
-
 import { Link } from 'react-router-dom';
+
 import { useTheme } from '../../hooks/theme';
 import { useToast } from '../../hooks/toast';
 
-import { Container, Nav, Section } from './styles';
+import Sidebar from '../Sidebar';
+
+import { Container, Nav, Section, Button } from './styles';
 
 const HeaderLanding: React.FC = () => {
   const { changeTheme, theme } = useTheme();
   const { addToast } = useToast();
+  const [show, setShow] = useState(false);
 
   const switchTheme = useCallback(() => {
     try {
@@ -39,23 +40,22 @@ const HeaderLanding: React.FC = () => {
             <h1>Desafio Github</h1>
           </Link>
         </Section>
-        <Section>
+        <Section className="links">
           <a href="/">Para voluntários</a>
           <a href="/">Para empresas</a>
-          <Switch
-            onChange={switchTheme}
-            checked={theme.title === 'dark'}
-            checkedIcon={false}
-            uncheckedIcon={false}
-            uncheckedHandleIcon={<FiSun size={30} />}
-            checkedHandleIcon={<FiMoon size={30} />}
-            height={10}
-            width={40}
-            handleDiameter={30}
-            onColor={lighten(0.08, theme.colors.header.background)}
-            offColor={lighten(0.08, theme.colors.header.background)}
-            data-testid="changeTheme"
-          />
+          <Button onClick={switchTheme}>
+            {theme.title === 'dark' ? (
+              <FiMoon size={30} />
+            ) : (
+              <FiSun size={30} />
+            )}
+          </Button>
+        </Section>
+        <Section className="menu">
+          <Button onClick={() => setShow(true)}>
+            <FiMenu size={30} />
+          </Button>
+          <Sidebar close={() => setShow(false)} show={show} />
         </Section>
       </Nav>
     </Container>

@@ -5,8 +5,8 @@ export default {
 
   colors: {
     header: {
-      background: '#FFF',
-      color: '#000',
+      background: '#000',
+      color: '#f2f2f2',
     },
     status: {
       successLabel: '#238636',
@@ -31,6 +31,6 @@ export default {
     },
     primary: '#000',
     secondary: '#8b949e',
-    background: '#f2f2f2',
+    background: '#fff ',
   },
 } as DefaultTheme;

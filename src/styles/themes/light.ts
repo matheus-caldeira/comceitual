@@ -5,7 +5,7 @@ export default {
 
   colors: {
     header: {
-      background: '#FFF',
+      background: '#f2f2f2',
       color: '#000',
     },
     status: {
@@ -31,6 +31,6 @@ export default {
     },
     primary: '#000',
     secondary: '#8b949e',
-    background: '#f2f2f2',
+    background: '#fff',
   },
 } as DefaultTheme;
