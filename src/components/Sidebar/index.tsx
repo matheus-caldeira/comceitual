@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSpring } from 'react-spring';
-import { FiX } from 'react-icons/fi';
+import { FiX, FiChevronRight } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 import logo from '../../assets/images/logo.png';
 
@@ -30,7 +31,18 @@ const StoreHeader: React.FC<IProps> = ({ close, show }) => {
         <Menu type="button">
           <FiX size={30} />
         </Menu>
-        <p>links</p>
+        <Link to="/ongs">
+          <p>Ongs</p>
+          <FiChevronRight size={30} />
+        </Link>
+        <Link to="/signin">
+          <p>Entrar</p>
+          <FiChevronRight size={30} />
+        </Link>
+        <Link to="/signup">
+          <p>Junte-se a nós!</p>
+          <FiChevronRight size={30} />
+        </Link>
       </Content>
     </Container>
   );

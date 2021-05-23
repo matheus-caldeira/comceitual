@@ -36,9 +36,11 @@ export const AnimationContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
   max-width: 100%;
+  min-height: 100%;
+  padding: 20px 0;
 
   animation: ${apperFromRight} 1s;
 
@@ -49,7 +51,7 @@ export const AnimationContainer = styled.div`
   }
 
   form {
-    margin: 80px 0;
+    margin: 0;
     width: 340px;
     text-align: center;
     position: relative;

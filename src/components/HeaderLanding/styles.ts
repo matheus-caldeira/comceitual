@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+interface IGoBack {
+  show: boolean;
+}
+
 export const Container = styled.header`
   position: -webkit-sticky;
   position: sticky;
@@ -9,16 +13,23 @@ export const Container = styled.header`
   color: ${props => props.theme.colors.header.color};
   padding: 0 15px;
   z-index: 10;
+
+  &.custom {
+    position: relative;
+  }
 `;
 
 export const Nav = styled.nav`
   height: 60px;
-  /* max-width: 1000px; */
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin: 0 auto;
-  padding: 0 90px;
+  padding: 15px 90px;
+
+  &.custom {
+    height: auto;
+  }
 
   .menu {
     display: none;
@@ -32,7 +43,7 @@ export const Nav = styled.nav`
     padding: 0 20px;
   }
 
-  @media (max-width: 590px) {
+  @media (max-width: 535px) {
     padding: 0 20px;
 
     .links {
@@ -48,6 +59,30 @@ export const Nav = styled.nav`
 export const Section = styled.section`
   display: flex;
   align-items: center;
+  margin-left: 32px;
+
+  &.custom {
+    flex-direction: column;
+    align-items: flex-start;
+    p {
+      margin-top: 10px;
+    }
+  }
+
+  &.links {
+    a.active {
+      color: ${props => props.theme.colors.a.color};
+      background-color: none;
+      border: 2px solid ${props => props.theme.colors.a.color};
+      border-radius: 16px;
+      padding: 5px 8px;
+
+      & + a {
+        background-color: ${props => props.theme.colors.a.color};
+        color: ${props => props.theme.colors.secondary};
+      }
+    }
+  }
 
   a {
     display: flex;
@@ -58,14 +93,9 @@ export const Section = styled.section`
     margin-right: 16px;
   }
 
-  h1 {
-    margin-left: 16px;
-  }
-
   svg {
-    background-color: ${props => props.theme.colors.header.color};
-    color: ${props => props.theme.colors.header.background};
-    border-radius: 50%;
+    color: ${props => props.theme.colors.a.color};
+    background: none;
     padding: 5px;
   }
 `;
@@ -74,7 +104,30 @@ export const Button = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: none;
   background: none;
   cursor: pointer;
+  border: 2px solid ${props => props.theme.colors.a.color};
+  border-radius: 50%;
+`;
+
+export const GoBack = styled.button<IGoBack>`
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: none;
+  border: none;
+  align-items: center;
+  justify-content: space-between;
+
+  svg {
+    border: 2px solid ${props => props.theme.colors.border};
+    margin-right: 5px;
+    padding: 2px;
+  }
+
+  display: ${props => (props.show ? 'flex' : 'none')};
+
+  @media (max-width: 768px) {
+    top: 60px;
+  }
 `;

@@ -36,9 +36,11 @@ export const AnimationContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
   max-width: 100%;
+  min-height: 100%;
+  padding: 20px 0;
 
   animation: ${apperFromLeft} 1s;
 

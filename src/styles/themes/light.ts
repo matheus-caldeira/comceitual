@@ -5,8 +5,8 @@ export default {
 
   colors: {
     header: {
-      background: '#f2f2f2',
-      color: '#000',
+      background: '#FFF',
+      color: '#374b4a',
     },
     status: {
       successLabel: '#238636',
@@ -17,20 +17,24 @@ export default {
       infoText: '#f0f6fc',
     },
     button: {
-      background: '#f9a72b',
+      background: '#ffa737',
       color: '#000',
     },
     input: {
-      background: '#fff',
+      background: '#f7f7f7',
       color: '#666360',
       border: '#232129',
-      colorFocus: '#f9a72b',
+      colorFocus: '#ffa737',
     },
     a: {
-      color: '#ff9000',
+      color: '#ffa737',
     },
-    primary: '#000',
-    secondary: '#8b949e',
-    background: '#fff',
+    border: '#374b4a',
+    primary: '#000 ',
+    secondary: '#996421',
+    background: {
+      primary: '#f7f7f7',
+      secondary: '#FFF',
+    },
   },
 } as DefaultTheme;

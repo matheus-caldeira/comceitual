@@ -29,9 +29,13 @@ declare module 'styled-components' {
       a: {
         color: string;
       };
+      border: string;
       primary: string;
       secondary: string;
-      background: string;
+      background: {
+        primary: string;
+        secondary: string;
+      };
     };
   }
 }
