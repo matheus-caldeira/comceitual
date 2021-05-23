@@ -41,4 +41,8 @@ export const Content = styled.div`
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  section {
+    padding: 0;
+  }
 `;

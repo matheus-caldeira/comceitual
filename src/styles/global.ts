@@ -9,10 +9,11 @@ export default createGlobalStyle`
   }
 
   body {
-    background: ${props => props.theme.colors.background.primary};
+    background: ${props => props.theme.colors.background.secondary};
     color: ${props => props.theme.colors.primary};
     -webkit-font-smoothing: antialiased;
     font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
   }
 
   h1, h3, button, a, input, select {

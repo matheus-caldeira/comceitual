@@ -3,8 +3,10 @@ import { useParams } from 'react-router-dom';
 
 import Header from '../../components/HeaderLanding';
 import Photos from '../../components/Photos';
+import Performance from '../../components/Performance';
 
 import { projects, photos } from '../../utils/datas';
+import { Background, Section } from '../Landing/styles';
 
 import { Container, Content, Nav } from './styles';
 
@@ -29,7 +31,7 @@ const Project: React.FC = () => {
           onClick={() => setSubPage(0)}
           className={subPage === 0 ? 'active' : ''}
         >
-          Projetos
+          Relátorios
         </button>
         <button
           type="button"
@@ -48,12 +50,65 @@ const Project: React.FC = () => {
       </Nav>
 
       <Content>
-        {subPage === 0 && <div>relatorios</div>}
-        {subPage === 1 && (
-          <div>
-            <p>Desempenho</p>
-          </div>
+        {subPage === 0 && (
+          <>
+            <Section>
+              <div className="info">
+                <h1>Titulo</h1>
+                <h4>
+                  Lorem <span>ipsum dolor sit amet</span> consectetur
+                  adipisicing elit. Fuga assumenda minima fugiat vero dolore
+                  nisi at minus id expedita molestias nam maiores eos temporibus
+                  iure, neque quasi, debitis tempore similique.
+                </h4>
+                <h4>
+                  Lorem <span>ipsum dolor sit amet</span> consectetur
+                  adipisicing elit. Fuga assumenda minima fugiat vero dolore
+                  nisi at minus id expedita molestias nam maiores eos temporibus
+                  iure, neque quasi, debitis tempore similique.
+                </h4>
+              </div>
+              <Background />
+            </Section>
+            <Section>
+              <div className="info">
+                <h1>Titulo</h1>
+                <h4>
+                  Lorem <span>ipsum dolor sit amet</span> consectetur
+                  adipisicing elit. Fuga assumenda minima fugiat vero dolore
+                  nisi at minus id expedita molestias nam maiores eos temporibus
+                  iure, neque quasi, debitis tempore similique.
+                </h4>
+                <h4>
+                  Lorem <span>ipsum dolor sit amet</span> consectetur
+                  adipisicing elit. Fuga assumenda minima fugiat vero dolore
+                  nisi at minus id expedita molestias nam maiores eos temporibus
+                  iure, neque quasi, debitis tempore similique.
+                </h4>
+              </div>
+              <Background />
+            </Section>
+            <Section>
+              <div className="info">
+                <h1>Titulo</h1>
+                <h4>
+                  Lorem <span>ipsum dolor sit amet</span> consectetur
+                  adipisicing elit. Fuga assumenda minima fugiat vero dolore
+                  nisi at minus id expedita molestias nam maiores eos temporibus
+                  iure, neque quasi, debitis tempore similique.
+                </h4>
+                <h4>
+                  Lorem <span>ipsum dolor sit amet</span> consectetur
+                  adipisicing elit. Fuga assumenda minima fugiat vero dolore
+                  nisi at minus id expedita molestias nam maiores eos temporibus
+                  iure, neque quasi, debitis tempore similique.
+                </h4>
+              </div>
+              <Background />
+            </Section>
+          </>
         )}
+        {subPage === 1 && <Performance />}
         {subPage === 2 && <Photos photos={photos} />}
       </Content>
     </Container>
