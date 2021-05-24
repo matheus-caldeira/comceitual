@@ -20,7 +20,7 @@ export const ongs = [
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
     types: ['Infantil', 'violencia', 'Drogas'],
     image:
-      'https://images.unsplash.com/photo-1615150338956-542fc878f7e4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=745&q=80',
+      'https://images.unsplash.com/photo-1508779544523-dd1b27685be3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
   },
   {
     id: 2,
@@ -28,17 +28,22 @@ export const ongs = [
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
     types: ['Infantil', 'violencia', 'Drogas'],
     image:
-      'https://images.unsplash.com/photo-1615150338956-542fc878f7e4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=745&q=80',
+      'https://images.unsplash.com/photo-1511843395354-8f364cfb80d5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=401&q=80',
   },
 ];
 
 export const photos = [
   'https://images.unsplash.com/photo-1615150338956-542fc878f7e4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=745&q=80',
-  'https://images.unsplash.com/photo-1615150338956-542fc878f7e4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=745&q=80',
-  'https://images.unsplash.com/photo-1615150338956-542fc878f7e4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=745&q=80',
-  'https://images.unsplash.com/photo-1615150338956-542fc878f7e4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=745&q=80',
-  'https://images.unsplash.com/photo-1615150338956-542fc878f7e4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=745&q=80',
-  'https://images.unsplash.com/photo-1615150338956-542fc878f7e4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=745&q=80',
+  'https://images.unsplash.com/photo-1508779544523-dd1b27685be3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
+  'https://images.unsplash.com/photo-1511843395354-8f364cfb80d5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=401&q=80',
+  'https://images.unsplash.com/photo-1494832944834-a08818c634b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=889&q=80',
+  'https://images.unsplash.com/photo-1529520161780-2573a0926b31?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
+  'https://images.unsplash.com/photo-1518929573116-9588b2c3dda2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80',
+  'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
+  'https://images.unsplash.com/photo-1534068590799-09895a701e3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80',
+  'https://images.unsplash.com/photo-1542367787-4baf35f3037d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80',
+  'https://img.elo7.com.br/product/original/145D09F/camisetas-desenho-de-crianca-kit-3-camiseta-com-foto.jpg',
+  'https://static-wp-tor15-prd.torcedores.com/wp-content/uploads/2014/11/futebol-de-rua-11.jpg',
 ];
 
 export const projects = [
@@ -48,7 +53,7 @@ export const projects = [
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
     types: ['Infantil', 'violencia', 'Drogas'],
     image:
-      'https://images.unsplash.com/photo-1615150338956-542fc878f7e4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=745&q=80',
+      'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
   },
   {
     id: 1,
@@ -56,7 +61,7 @@ export const projects = [
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
     types: ['Infantil', 'violencia', 'Drogas'],
     image:
-      'https://images.unsplash.com/photo-1615150338956-542fc878f7e4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=745&q=80',
+      'https://images.unsplash.com/photo-1534068590799-09895a701e3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80',
   },
   {
     id: 2,
@@ -64,7 +69,24 @@ export const projects = [
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
     types: ['Infantil', 'violencia', 'Drogas'],
     image:
-      'https://images.unsplash.com/photo-1615150338956-542fc878f7e4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=745&q=80',
+      'https://images.unsplash.com/photo-1542367787-4baf35f3037d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80',
+  },
+];
+
+export const feedback = [
+  {
+    id: 0,
+    name: 'Agora consigo desenhar',
+    description: '',
+    image:
+      'https://img.elo7.com.br/product/original/145D09F/camisetas-desenho-de-crianca-kit-3-camiseta-com-foto.jpg',
+  },
+  {
+    id: 1,
+    name: 'Obrigado pela bola ',
+    description: '',
+    image:
+      'https://static-wp-tor15-prd.torcedores.com/wp-content/uploads/2014/11/futebol-de-rua-11.jpg',
   },
 ];
 

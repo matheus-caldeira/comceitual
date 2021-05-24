@@ -5,7 +5,7 @@ import Header from '../../components/HeaderLanding';
 import Photos from '../../components/Photos';
 import Performance from '../../components/Performance';
 
-import { projects, photos } from '../../utils/datas';
+import { projects, photos, feedback } from '../../utils/datas';
 import { Background, Section } from '../Landing/styles';
 
 import { Container, Content, Nav } from './styles';
@@ -52,60 +52,26 @@ const Project: React.FC = () => {
       <Content>
         {subPage === 0 && (
           <>
-            <Section>
-              <div className="info">
-                <h1>Titulo</h1>
-                <h4>
-                  Lorem <span>ipsum dolor sit amet</span> consectetur
-                  adipisicing elit. Fuga assumenda minima fugiat vero dolore
-                  nisi at minus id expedita molestias nam maiores eos temporibus
-                  iure, neque quasi, debitis tempore similique.
-                </h4>
-                <h4>
-                  Lorem <span>ipsum dolor sit amet</span> consectetur
-                  adipisicing elit. Fuga assumenda minima fugiat vero dolore
-                  nisi at minus id expedita molestias nam maiores eos temporibus
-                  iure, neque quasi, debitis tempore similique.
-                </h4>
-              </div>
-              <Background />
-            </Section>
-            <Section>
-              <div className="info">
-                <h1>Titulo</h1>
-                <h4>
-                  Lorem <span>ipsum dolor sit amet</span> consectetur
-                  adipisicing elit. Fuga assumenda minima fugiat vero dolore
-                  nisi at minus id expedita molestias nam maiores eos temporibus
-                  iure, neque quasi, debitis tempore similique.
-                </h4>
-                <h4>
-                  Lorem <span>ipsum dolor sit amet</span> consectetur
-                  adipisicing elit. Fuga assumenda minima fugiat vero dolore
-                  nisi at minus id expedita molestias nam maiores eos temporibus
-                  iure, neque quasi, debitis tempore similique.
-                </h4>
-              </div>
-              <Background />
-            </Section>
-            <Section>
-              <div className="info">
-                <h1>Titulo</h1>
-                <h4>
-                  Lorem <span>ipsum dolor sit amet</span> consectetur
-                  adipisicing elit. Fuga assumenda minima fugiat vero dolore
-                  nisi at minus id expedita molestias nam maiores eos temporibus
-                  iure, neque quasi, debitis tempore similique.
-                </h4>
-                <h4>
-                  Lorem <span>ipsum dolor sit amet</span> consectetur
-                  adipisicing elit. Fuga assumenda minima fugiat vero dolore
-                  nisi at minus id expedita molestias nam maiores eos temporibus
-                  iure, neque quasi, debitis tempore similique.
-                </h4>
-              </div>
-              <Background />
-            </Section>
+            {feedback.map(feed => (
+              <Section key={`feed-${feed.id}`}>
+                <div className="info">
+                  <h1>{feed.name}</h1>
+                  <h4>
+                    Lorem <span>ipsum dolor sit amet</span> consectetur
+                    adipisicing elit. Fuga assumenda minima fugiat vero dolore
+                    nisi at minus id expedita molestias nam maiores eos
+                    temporibus iure, neque quasi, debitis tempore similique.
+                  </h4>
+                  <h4>
+                    Lorem <span>ipsum dolor sit amet</span> consectetur
+                    adipisicing elit. Fuga assumenda minima fugiat vero dolore
+                    nisi at minus id expedita molestias nam maiores eos
+                    temporibus iure, neque quasi, debitis tempore similique.
+                  </h4>
+                </div>
+                <Background url={feed.image} />
+              </Section>
+            ))}
           </>
         )}
         {subPage === 1 && <Performance />}
