@@ -4,6 +4,7 @@ import Header from '../../components/HeaderLanding';
 
 import logo from '../../assets/images/logo_1.svg';
 import pc from '../../assets/images/pc.png';
+import benificios from '../../assets/images/benificios.png';
 
 import { Background, Container, Section } from './styles';
 
@@ -48,6 +49,37 @@ const Landing: React.FC = () => {
           </h4>
         </div>
         <Background url={pc} />
+      </Section>
+      <Section>
+        <div className="info">
+          <h1>Beneficios da transformação digital</h1>
+          <h4>
+            <span>Redução de custos operacionais:</span> A tecnologia muitas
+            vezes ajudará a reduzir alguns custos do dia a dia, além de tornar o
+            processo muito mais prático e automatizado, permitindo que a ONG
+            consiga reduzir os gastos.
+          </h4>
+          <h4>
+            <span>Facilidade na comunicação:</span> Hoje, graças às redes
+            sociais e canais digitais, é possível que o consumidor não só se
+            comunique diretamente com a empresa, como seja o produtor principal
+            de conteúdo a respeito da sua organização.
+          </h4>
+          <h4>
+            <span>Otimização de processos: </span> Quando usamos a tecnologia a
+            nosso favor, podemos encontrar os gargalos durante todo o processo e
+            conseguimos utilizar ferramentas diversas para tornar tudo mais
+            simples e prático, melhorando não só a gestão da ONG de modo geral,
+            como a experiência do dos voluntários .
+          </h4>
+          <h4>
+            <span>Aumento da segurança:</span> A tecnologia proveniente da
+            transformação digital também é uma grande aliada da segurança,
+            principalmente nos meios digitais. É por meio de ferramentas
+            adequadas que você irá conseguir que seu site seja seguro.
+          </h4>
+        </div>
+        <Background url={benificios} />
       </Section>
       {/* <Section className="custom">
         <img src={pc} alt="Ongs" />

@@ -14,7 +14,7 @@ import getValidationErrors from '../../utils/getValidationErrors';
 
 import ISignUp from '../../DTOS/Forms/ISignUp';
 
-import logoImg from '../../assets/images/logo_horinzontal.svg';
+import logoImg from '../../assets/images/logo_horinzontal.png';
 
 import { Container, Content, AnimationContainer, Background } from './styles';
 

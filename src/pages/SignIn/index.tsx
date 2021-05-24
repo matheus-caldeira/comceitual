@@ -13,7 +13,7 @@ import { useToast } from '../../hooks/toast';
 
 import ISignIn from '../../DTOS/Forms/ISignIn';
 
-import logoImg from '../../assets/images/logo_horinzontal.svg';
+import logoImg from '../../assets/images/logo_horinzontal.png';
 
 import { Container, Content, AnimationContainer, Background } from './styles';
 

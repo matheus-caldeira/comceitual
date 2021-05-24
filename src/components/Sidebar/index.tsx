@@ -3,7 +3,7 @@ import { useSpring } from 'react-spring';
 import { FiX, FiChevronRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
-import logo from '../../assets/images/logo_horinzontal.svg';
+import logo from '../../assets/images/logo_horinzontal.png';
 
 import { Container, Content, Menu } from './styles';
 

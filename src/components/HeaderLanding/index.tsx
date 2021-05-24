@@ -6,7 +6,7 @@ import { useModal } from '../../hooks/modal';
 
 import Sidebar from '../Sidebar';
 
-import logo from '../../assets/images/logo_horinzontal.svg';
+import logo from '../../assets/images/logo_horinzontal.png';
 
 import { Container, Nav, Section, Button, GoBack } from './styles';
 

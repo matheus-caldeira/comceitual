@@ -46,7 +46,8 @@ export const AnimationContainer = styled.div`
 
   img {
     object-fit: contain;
-    width: 100%;
+    width: 70%;
+    margin: 0 auto;
   }
 
   form {
