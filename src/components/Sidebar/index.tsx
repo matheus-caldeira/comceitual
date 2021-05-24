@@ -32,7 +32,7 @@ const StoreHeader: React.FC<IProps> = ({ close, show }) => {
           <FiX size={30} />
         </Menu>
         <Link to="/ongs">
-          <p>Ongs</p>
+          <p>Organizações</p>
           <FiChevronRight size={30} />
         </Link>
         <Link to="/signin">

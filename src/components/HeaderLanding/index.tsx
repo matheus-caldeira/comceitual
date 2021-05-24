@@ -57,7 +57,7 @@ const HeaderLanding: React.FC<IProps> = ({
           </Link>
         </Section>
         <Section className="links">
-          <Link to="/ongs">Ongs</Link>
+          <Link to="/ongs">Organizações</Link>
           <Link to="/signin" className="active">
             Entrar
           </Link>
