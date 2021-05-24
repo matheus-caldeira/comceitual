@@ -54,8 +54,12 @@ Mencione as ferramentas que você usou para criar seu projeto
 
 Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
-* **Matheus Cardozo Caldeira** - *Desenvolvedor* - [umdesenvolvedor](https://github.com/linkParaPerfil)
-* **Fulano De Tal** - *Documentação* - [fulanodetal](https://github.com/linkParaPerfil)
+* **Matheus Cardozo Caldeira** - *Desenvolvedor* - [Linkedin](https://www.linkedin.com/in/caldeiramatheus/)
+* **Cristianara de Almeida Silva** - *Comunicação* - [Linkedin](https://www.linkedin.com/in/cristianara-silva/)
+* **Pedro Henrique Dias Matchura** - *Marketing* - [Linkedin](https://www.linkedin.com/in/pedro-machtura/)
+* **Bruno Vinicius Bertaglia Tozatto** - *Gestão e negócios* - [Linkedin](https://www.linkedin.com/in/brunobertaglia/)
+* **Kelsser Thiago Aguiar Gregorio da Silva** - *Design* - [Linkedin](https://www.linkedin.com/in/kelsserthiago/)
+* **Laura Pelágio Pires de Souza** - *Desenvolvedor* - [Linkedin](https://www.linkedin.com/in/caldeiramatheus/)
 
 Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
 
