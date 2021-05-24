@@ -65,7 +65,7 @@ Você também pode ver a lista de todos os [colaboradores](https://github.com/us
 
 ## 📄 Licença
 
-Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/usuario/projeto/licenca) para detalhes.
+This project is under the MIT license. See the LICENSE for more information.
 
 ---
 ⌨️ com ❤️ por [Matheus Caldeira](https://github.com/matheus-caldeira) 😊
