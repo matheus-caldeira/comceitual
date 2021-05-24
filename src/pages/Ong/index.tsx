@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
+import { useModal } from '../../hooks/modal';
+
 import Header from '../../components/HeaderLanding';
 import Photos from '../../components/Photos';
 import Performance from '../../components/Performance';
@@ -16,6 +18,7 @@ interface IRouteProps {
 const Ong: React.FC = () => {
   const { id } = useParams<IRouteProps>();
   const [subPage, setSubPage] = useState(0);
+  const { open } = useModal();
 
   return (
     <Container>
@@ -56,7 +59,9 @@ const Ong: React.FC = () => {
               <div className="name">
                 <h1>{project.name}</h1>
                 <Link to={`/projects/${project.id}`}>Ver projeto</Link>
-                <button type="button">Acompanhar</button>
+                <button type="button" onClick={open}>
+                  Acompanhar
+                </button>
               </div>
               <p>{project.description}</p>
             </Project>

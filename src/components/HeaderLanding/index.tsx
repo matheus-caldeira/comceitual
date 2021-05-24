@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { FiMenu, FiArrowLeft } from 'react-icons/fi';
 import { Link, useHistory } from 'react-router-dom';
 
+import { useModal } from '../../hooks/modal';
+
 import Sidebar from '../Sidebar';
 
 import { Container, Nav, Section, Button, GoBack } from './styles';
@@ -21,6 +23,7 @@ const HeaderLanding: React.FC<IProps> = ({
 }) => {
   const [show, setShow] = useState(false);
   const { goBack } = useHistory();
+  const { open } = useModal();
 
   if (custom)
     return (
@@ -30,10 +33,10 @@ const HeaderLanding: React.FC<IProps> = ({
             <h1>{name}</h1>
             <p>{description}</p>
           </Section>
-          <Section className="links">
-            <Link to="/signup" className="active">
+          <Section className="links custom">
+            <button type="button" onClick={open} className="active">
               Acompanhar
-            </Link>
+            </button>
           </Section>
           <GoBack className="custom" type="button" onClick={goBack} show>
             <FiArrowLeft size={25} />
@@ -45,7 +48,7 @@ const HeaderLanding: React.FC<IProps> = ({
 
   return (
     <Container>
-      <Nav>
+      <Nav className={back ? 'custom' : ''}>
         <Section>
           <Link to="/">
             <h1>COMceitual</h1>

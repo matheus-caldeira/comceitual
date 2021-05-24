@@ -20,34 +20,45 @@ export const Container = styled.header`
 `;
 
 export const Nav = styled.nav`
-  height: 60px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
   margin: 0 auto;
   padding: 15px 90px;
 
-  &.custom {
-    height: auto;
-  }
+  height: auto;
 
   .menu {
     display: none;
   }
 
   @media (max-width: 768px) {
-    padding: 50px 40px 15px;
+    &.custom {
+      padding: 50px 40px 15px;
+    }
+    padding: 20px 0;
   }
 
   @media (max-width: 750px) {
-    padding: 50px 0 15px;
+    &.custom {
+      padding: 50px 0 15px;
+    }
+    padding: 20px 0;
   }
 
   @media (max-width: 582px) {
-    padding: 50px 0 15px;
+    &.custom {
+      padding: 50px 0 15px;
+    }
+    padding: 20px 0;
 
     .links {
       display: none;
+      &.custom {
+        margin: 20px auto 0;
+        display: block;
+      }
     }
 
     .menu {
@@ -57,6 +68,7 @@ export const Nav = styled.nav`
 `;
 
 export const Section = styled.section`
+  height: 100%;
   display: flex;
   align-items: center;
   margin-left: 32px;
@@ -70,14 +82,16 @@ export const Section = styled.section`
   }
 
   &.links {
-    a.active {
+    a.active,
+    button.active {
       color: ${props => props.theme.colors.a.color};
-      background-color: none;
+      background: none;
       border: 2px solid ${props => props.theme.colors.a.color};
       border-radius: 16px;
       padding: 5px 8px;
 
-      & + a {
+      & + a,
+      & + button {
         background-color: ${props => props.theme.colors.a.color};
         color: ${props => props.theme.colors.secondary};
       }
