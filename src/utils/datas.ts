@@ -1,3 +1,10 @@
+const rand = (max: number, min = 0) =>
+  parseInt((Math.random() * (max - min) + min).toFixed(0), 10);
+function array(qty: any, max: number, min = 0) {
+  const newArray = new Array(parseInt(qty, 10) + 1).fill(1);
+  return newArray.map(() => rand(max, min));
+}
+
 export const ongs = [
   {
     id: 0,
@@ -62,7 +69,31 @@ export const projects = [
 ];
 
 export const graphDatas = [
-  { id: 0, name: 'Afetados', data: [1, 2, 3, 4, 5, 8, 9, 10] },
+  {
+    id: 0,
+    name: 'Novo alunos',
+    data: array(rand(30, 5), 50),
+  },
+  {
+    id: 1,
+    name: 'Desistência de alunos',
+    data: array(rand(30, 5), 50),
+  },
+  {
+    id: 2,
+    name: 'Custos',
+    data: array(rand(30, 5), 1000),
+  },
+  {
+    id: 3,
+    name: 'Voluntários',
+    data: array(rand(30, 5), 50),
+  },
+  {
+    id: 4,
+    name: 'Quantidade de Doações',
+    data: array(rand(30, 5), 50),
+  },
 ];
 
 export const graphBorder = [
@@ -84,6 +115,7 @@ export const graphColor = [
   'rgba(255, 159, 64, 0.2)',
   'rgba(74, 129, 122, 0.2)',
 ];
+
 export const graphOptions = {
   responsive: true,
   legend: false,
@@ -92,9 +124,62 @@ export const graphOptions = {
       {
         ticks: {
           beginAtZero: true,
-          suggestedMax: 40,
         },
       },
     ],
+  },
+};
+
+export const graphBar = {
+  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+  datasets: [
+    {
+      type: 'line',
+      label: 'Custos',
+      borderColor: 'rgb(54, 162, 235)',
+      borderWidth: 2,
+      fill: false,
+      data: array(rand(30, 5), 1000),
+    },
+    {
+      type: 'bar',
+      label: 'Entrada de alunos',
+      backgroundColor: 'rgb(255, 99, 132)',
+      data: array(rand(30, 5), 100),
+      borderColor: 'white',
+      borderWidth: 2,
+    },
+    {
+      type: 'bar',
+      label: 'Saida de alunos',
+      backgroundColor: 'rgb(75, 192, 192)',
+      data: array(rand(30, 5), 100),
+    },
+  ],
+};
+
+export const graphRadar = {
+  data: {
+    labels: [
+      'Gestão de pessoa',
+      'Gestão de voluntário',
+      'Gestão de comunicação',
+      'Gestão de doadores',
+      'gestão de serviços',
+    ],
+    datasets: [
+      {
+        label: 'Resumo',
+        data: array(5, 100, 50),
+        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+        borderColor: 'rgba(255, 99, 132, 1)',
+        borderWidth: 1,
+      },
+    ],
+  },
+  options: {
+    scale: {
+      ticks: { beginAtZero: true },
+    },
   },
 };

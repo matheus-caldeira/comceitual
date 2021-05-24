@@ -6,6 +6,8 @@ import { useModal } from '../../hooks/modal';
 
 import Sidebar from '../Sidebar';
 
+import logo from '../../assets/images/logo_horinzontal.svg';
+
 import { Container, Nav, Section, Button, GoBack } from './styles';
 
 interface IProps {
@@ -51,7 +53,7 @@ const HeaderLanding: React.FC<IProps> = ({
       <Nav className={back ? 'custom' : ''}>
         <Section>
           <Link to="/">
-            <h1>COMceitual</h1>
+            <img src={logo} alt="Estrategize" />
           </Link>
         </Section>
         <Section className="links">

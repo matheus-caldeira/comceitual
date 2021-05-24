@@ -8,8 +8,8 @@ export const Container = styled.div`
   width: 100%;
   background-color: ${props => props.theme.colors.header.background};
   color: ${props => props.theme.colors.header.color};
-  z-index: 10;
   padding-bottom: 50px;
+  min-height: 100vh;
 `;
 
 export const Search = styled.form`

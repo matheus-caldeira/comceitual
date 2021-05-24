@@ -73,6 +73,14 @@ export const Section = styled.section`
   align-items: center;
   margin-left: 32px;
 
+  img {
+    height: 60px;
+
+    @media (max-width: 320px) {
+      max-width: 300px;
+    }
+  }
+
   &.custom {
     flex-direction: column;
     align-items: flex-start;
@@ -134,7 +142,6 @@ export const GoBack = styled.button<IGoBack>`
   justify-content: space-between;
 
   svg {
-    border: 2px solid ${props => props.theme.colors.border};
     margin-right: 5px;
     padding: 2px;
   }

@@ -28,8 +28,8 @@ export const Content = styled.nav`
 
   img {
     object-fit: contain;
-    width: 90%;
-    margin: 15px auto 40px;
+    width: 80%;
+    margin: 40px auto;
   }
 
   a {
@@ -48,8 +48,8 @@ export const Menu = styled.button`
   top: 20px;
   right: 16px;
   z-index: 7;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border: 2px solid ${props => props.theme.colors.a.color};
   border-radius: 50%;
   display: flex;

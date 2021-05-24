@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { Line } from 'react-chartjs-2';
+import { Line, Bar, Radar } from 'react-chartjs-2';
 import {
   graphBorder,
   graphColor,
   graphOptions,
   graphDatas,
+  graphBar,
+  graphRadar,
 } from '../../utils/datas';
 
 import { Container } from './styles';
@@ -22,8 +24,8 @@ const Performance: React.FC = () => {
             label: graph.name,
             data: graph.data,
             fill: false,
-            backgroundColor: graphColor,
-            borderColor: graphBorder,
+            backgroundColor: graphColor[graph.id],
+            borderColor: graphBorder[graph.id],
           },
         ],
       },
@@ -34,6 +36,8 @@ const Performance: React.FC = () => {
 
   return (
     <Container>
+      <Radar type="radar" data={graphRadar.data} options={graphRadar.options} />
+      <Bar type="" data={graphBar} />
       {charts.map(chart => (
         <Line
           key={`chart-${chart.id}`}

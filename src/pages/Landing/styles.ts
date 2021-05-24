@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+interface IImagem {
+  url?: string;
+}
+
 const image =
   'https://images.unsplash.com/photo-1527525443983-6e60c75fff46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=332&q=80';
 
@@ -8,9 +12,9 @@ export const Container = styled.div`
   position: sticky;
   top: 0;
   width: 100%;
+  min-height: 100vh;
   background-color: ${props => props.theme.colors.header.background};
   color: ${props => props.theme.colors.header.color};
-  z-index: 10;
   padding-bottom: 50px;
 `;
 
@@ -21,10 +25,34 @@ export const Section = styled.section`
   justify-content: space-between;
   position: relative;
   width: 100%;
-  padding: 0 10%;
+  padding: 50px 10%;
+
+  &.custom {
+    img {
+      width: 150px;
+      object-fit: contain;
+    }
+    .info {
+      width: auto;
+      h4,
+      h1 {
+        text-align: center;
+      }
+      span {
+        margin: 15px;
+      }
+    }
+  }
 
   header + & {
     margin-top: 60px;
+    h1 {
+      font-size: 2rem;
+    }
+
+    .name {
+      font-size: 1.8rem;
+    }
   }
 
   &:nth-child(2n) {
@@ -64,6 +92,7 @@ export const Section = styled.section`
     }
 
     span {
+      font-size: 1rem;
       color: ${props => props.theme.colors.secondary};
     }
 
@@ -85,8 +114,8 @@ export const Section = styled.section`
   }
 `;
 
-export const Background = styled.div`
+export const Background = styled.div<IImagem>`
   flex: 1;
-  background: url(${image}) no-repeat center;
-  background-size: cover;
+  background: url(${props => (props.url ? props.url : image)}) no-repeat center;
+  background-size: ${props => (props.url ? 'contain' : 'cover')};
 `;
