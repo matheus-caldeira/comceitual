@@ -59,7 +59,7 @@ Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 * **Pedro Henrique Dias Matchura** - *Marketing* - [Linkedin](https://www.linkedin.com/in/pedro-machtura/)
 * **Bruno Vinicius Bertaglia Tozatto** - *Gestão e negócios* - [Linkedin](https://www.linkedin.com/in/brunobertaglia/)
 * **Kelsser Thiago Aguiar Gregorio da Silva** - *Design* - [Linkedin](https://www.linkedin.com/in/kelsserthiago/)
-* **Laura Pelágio Pires de Souza** - *Entusiasta* - [Linkedin](https://www.linkedin.com/in/caldeiramatheus/)
+* **Laura Pelágio Pires de Souza** - *Entusiasta* - [E-mail](laurapelagio271@gmail.com)
 
 Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
 
