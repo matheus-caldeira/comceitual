@@ -1,46 +1,67 @@
-# Getting Started with Create React App
+# Estrategize
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Otimizando a performance do terceiro setor  
 
-## Available Scripts
+A Estrategize, não é apenas uma plataforma e sim, um grupo de pessoas que buscam transformar digitalmente a qualidade das ONG’s, ao perceber a necessidade que possuem ao tentar adquirir informações e assessoria para a implementação das suas novas ideias.
 
-In the project directory, you can run:
+## 🚀 Começando
 
-### `yarn start`
+Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Consulte **Implantação** para saber como implantar o projeto.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 📋 Pré-requisitos
 
-### `yarn test`
+De que coisas você precisa para instalar o software e como instalá-lo?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+Git
+Node
+Yarn
+```
 
-### `yarn build`
+### 🔧 Instalação
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para executar o projeto localmente é necessário criar um clone desse repositorio
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+git clone https://github.com/matheus-caldeira/estrategize.git && cd estrategize
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Em seguida, instale as dependências do projeto com
 
-### `yarn eject`
+```
+yarn
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Após isso basta executar o projeto
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+yarn start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 🛠️ Construído com
 
-## Learn More
+Mencione as ferramentas que você usou para criar seu projeto
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* [Yarn](https://yarnpkg.com/) - Gerente de dependências JavaScript
+* [ReactJs](https://pt-br.reactjs.org/) - ReactJS - biblioteca JavaScript para criar interfaces de usuário
+* [Styled Components](https://styled-components.com/) - 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+## ✒️ Autores
+
+Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
+
+* **Matheus Cardozo Caldeira** - *Desenvolvedor* - [umdesenvolvedor](https://github.com/linkParaPerfil)
+* **Fulano De Tal** - *Documentação* - [fulanodetal](https://github.com/linkParaPerfil)
+
+Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
+
+## 📄 Licença
+
+Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/usuario/projeto/licenca) para detalhes.
+
+---
+⌨️ com ❤️ por [Matheus Caldeira](https://github.com/matheus-caldeira) 😊
